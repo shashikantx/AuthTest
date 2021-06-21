@@ -75,7 +75,7 @@ namespace AuthTest.Server
                 .AddCore(options => {
                 options.UseMongoDb()
                     .UseDatabase(new MongoClient("mongodb://localhost:27017")
-                    .GetDatabase("testdb2"))
+                    .GetDatabase("testdb"))
                      .SetApplicationsCollectionName("my-apps")
                      .SetAuthorizationsCollectionName("my-auths")
                      .SetScopesCollectionName("my-scopes")
